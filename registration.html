@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+  <title>Users Registration Form</title>
+</head>
+
+<style>
+  input#name,
+  input#email,
+  input#password,
+  input#dob
+	{
+    height: 25px;
+    width: 300px;
+		background-color : #ffff4d;
+  }
+
+
+  .title
+	{
+    background-color: lightyellow;
+    color: red;
+    height: 35px;
+    width: 150px;
+		font-weight: bold;
+    margin-left: 500px;
+    margin-top: 150px;
+  }
+
+
+  .submit
+	{
+    background-color: lightgreen;
+    height: 28px;
+    width: 125px;
+		font-weight: bold;
+    border-radius: 2px;
+  }
+</style>
+
+
+
+<body bgcolor="lightblue">
+  <center>
+    <form id="user-form">
+      <fieldset>
+        <legend class = "title">Registration Form</legend>
+        <table cellspacing="3" cellpadding="3">
+          <tr>
+            <td><label for="name">Name: </label></td>
+            <td><input type="text" id="name" name="nm" required placeholder="User name"/></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="em" required placeholder="user@domainname.com"/></td>
+          </tr>
+          <tr>
+            <td><label for="password">Password:</label></td>
+            <td>
+              <input type="password" id="password" name="pass" required placeholder="Password"/>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="dob">Date of Birth: </label></td>
+            <td><input type="date" id="dob" name="DOB" required /></td>
+          </tr>
+          <tr>
+            <td>
+							<label for="acceptTerms">I accept all the Terms & Conditions</label>
+            </td>
+            <td><input type="checkbox" id="acceptTerms" name="accept" /></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center">
+              <button type="submit" class = "submit">Submit</button>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+    <h2>Entries</h2>
+    <div id="user-entries"></div>
+  </center>
+  <script type="text/javascript" src="main.js"></script>
+</body>
